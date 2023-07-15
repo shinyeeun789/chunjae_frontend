@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> float와 block 요소에 대해 알아보자 </title>
+    <style>
+        .box {
+            background: #f1f1f1;
+            margin-bottom: 15px;
+            padding: 20px;
+        }
+        .float_box {
+            float: left;
+            background-color: #ddd;
+            padding: 10px;
+            margin-right: 20px;
+        }
+        .display_box {
+            display: inline-block;
+            background-color: #ddd;
+            padding: 10px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="float_box"> float box1 </div>
+        <div class="float_box"> float box2 </div>
+        <p> float:left;와 display:inline-block;의 차이 </p>
+    </div>
+    <div class="box">
+        <div class="display_box"> display box1 </div>
+        <div class="display_box"> display box2 </div>
+        <p> float:left;와 display:inline-block;의 차이 </p>
+    </div>
+</body>
+</html>
