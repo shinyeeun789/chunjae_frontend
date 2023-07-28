@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> cursor 속성에 대해 알아보자 </title>
+    <style>
+        .mouse { width: 1280px; clear: both; min-height: 100vh; }
+        .mouse:after { content: ""; clear: both; display: block; width: 100%; }
+        .mouse ul { list-style: none; clear: both; }
+        .mouse li { width: 100px; height: 100px; margin: 15px; border: 1px solid #333; float: left;}
+        .mouse li.alias { cursor: alias; }          /* 바로가기 */
+        .mouse li.all-scroll { cursor: all-scroll; }
+        .mouse li.auto { cursor: auto; }            /* 기본 모양 */
+        .mouse li.cell { cursor: cell; }
+        .mouse li.col-resize { cursor: col-resize; }
+        .mouse li.context-menu { cursor: context-menu; }    /* 기본 모양 */
+        .mouse li.copy { cursor: copy; }
+        .mouse li.crosshair { cursor: crosshair; }
+        .mouse li.default { cursor: default; }       /* 기본 모양 */
+
+        .mouse li.e-resize { cursor: e-resize; }
+        .mouse li.ew-resize { cursor: ew-resize; }
+        .mouse li.grab { cursor: grab; }
+        .mouse li.grabbing { cursor: grabbing; }
+        .mouse li.help { cursor: help; }
+        .mouse li.move { cursor: move; }
+        .mouse li.n-resize { cursor: n-resize; }
+        .mouse li.no-drop { cursor: no-drop; }
+        .mouse li.none { cursor: none; }            /* 커서 없어짐*/
+
+        .mouse li.not-allowed { cursor: not-allowed; }
+        .mouse li.pointer { cursor: pointer; }
+        .mouse li.progress { cursor: progress; }   /* 마우스 포인터와 로딩 다 출력 */
+        .mouse li.row-resize { cursor: row-resize; }
+        .mouse li.s-resize { cursor: s-resize; }
+        .mouse li.text { cursor: text; }
+        .mouse li.url { cursor: url("/images/cursor.png"), auto; }
+        .mouse li.w-resize { cursor: w-resize; }
+        .mouse li.wait { cursor: wait; }            /* 마우스 포인터는 없어지고 로딩만 */
+        
+        .mouse li.zoom-in { cursor: zoom-in; }
+        .mouse li.zoom-out { cursor: zoom-out; }
+        .mouse li.url2 { cursor: url("/img/kitty.png"), auto; }
+    </style>
+</head>
+<body>
+    <div id="canvas">
+        <article class="mouse">
+            <ul>
+                <li class="alias"> alias </li>
+                <li class="all-scroll"> all-scroll </li>
+                <li class="auto"> auto </li>
+                <li class="cell"> cell </li>
+                <li class="col-resize"> col-resize </li>
+                <li class="context-menu"> context-menu </li>
+                <li class="copy"> copy </li>
+                <li class="crosshair"> crosshair </li>
+                <li class="default"> default </li>
+                <li class="e-resize"> e-resize </li>
+                <li class="ew-resize"> ew-resize </li>
+                <li class="grab"> grab </li>
+                <li class="grabbing"> grabbing </li>
+                <li class="help"> help </li>
+                <li class="move"> move </li>
+                <li class="n-resize"> n-resize </li>
+                <li class="no-drop"> no-drop </li>
+                <li class="none"> none </li>
+                <li class="not-allowed"> not-allowed </li>
+                <li class="pointer"> pointer </li>
+                <li class="progress"> progress </li>
+                <li class="row-resize"> row-resize </li>
+                <li class="s-resize"> s-resize </li>
+                <li class="text"> text </li>
+                <li class="url"> url </li>
+                <li class="w-resize"> w-resize </li>
+                <li class="wait"> wait </li>
+                <li class="zoom-in"> zoom-in </li>
+                <li class="zoom-out"> zoom-out </li>
+            </ul>
+        </article>
+    </div>
+</body>
+</html>
