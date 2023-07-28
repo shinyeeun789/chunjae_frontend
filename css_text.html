@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS text 속성에 대해 알아보자 </title>
+</head>
+<style>
+    @font-face {
+        font-family: 'NanumBarunpen';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    #area {
+        width: 1200px;
+        margin: 20px auto;
+    }
+    .p_wrap {
+        width: 40%;
+        padding: 0px 20px 20px 20px;
+        margin: 20px;
+        background-color: aliceblue;
+        float: left;
+    }
+    #area .content_tit {
+        font-weight: bold; 
+        color: blue;
+    }
+
+    .f1 {
+        font-style: oblique;
+    }
+    .f2 {
+        font-style: italic;
+    }
+    .f3 {
+        font-variant: small-caps;
+    }
+    .f4 {
+        text-transform: uppercase;
+    }
+    .f5 {
+        text-align: justify;
+    }
+    .f6 {
+        text-align: center;
+    }
+    .f7 {
+        text-indent: 20px;
+    }
+    .f8 {
+        text-decoration: overline line-through;
+    }
+    .f9 {
+        text-decoration: underline double #333;
+    }
+    .f10 {
+        letter-spacing: 5px;
+    }
+    .f11 {
+        word-spacing: 5px;
+    }
+    .f12 {
+        white-space: nowrap;
+    }
+    .f13 {
+        white-space: pre;
+    }
+    .f14 {
+        white-space: pre-line;
+    }
+    .f15 {
+        white-space: pre-wrap;
+    }
+    .f16 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+</style>
+<body>
+    <div id="area">
+        <div class="p_wrap">
+            <h3 class="content_tit"> font-style: oblique; </h3>
+            <p class="f1"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+        </div>
+        <div class="p_wrap">
+            <h3 class="content_tit"> font-style: italic; </h3>
+            <p class="f2"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+        </div>
+        <div class="p_wrap">
+            <h3 class="content_tit"> font-variant: small-caps; </h3>
+            <p class="f3"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+        </div>
+        <div class="p_wrap">
+            <h3 class="content_tit"> text-transform: uppercase; </h3>
+            <p class="f4"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+        </div>
+        <div class="p_wrap">
+            <h3 class="content_tit"> text-align: justify; </h3>
+            <p class="f5"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+        </div>
+        <div class="p_wrap">
+            <h3 class="content_tit"> text-align: center; </h3>
+            <p class="f6"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+        </div>
+        <div class="p_wrap">
+            <h3 class="content_tit"> text-indent: 20px; </h3>
+            <p class="f7"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+        </div>
+        <div class="p_wrap">
+            <h3 class="content_tit"> text-decoration: overline line-through; </h3>
+            <p class="f8"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+        </div>
+        <div class="p_wrap">
+            <h3 class="content_tit"> text-decoration: underline double #333; </h3>
+            <p class="f9"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+        </div>
+        <div class="p_wrap">
+            <h3 class="content_tit"> letter-spacing: 5px; </h3>
+            <p class="f10"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+        </div>
+        <div class="p_wrap">
+            <h3 class="content_tit"> word-spacing: 5px; </h3>
+            <p class="f11"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+        </div>
+        <div class="p_wrap">
+            <h3 class="content_tit"> white-space: nowrap; </h3>
+            <p class="f12"> Lorem Ipsum is simply dummy 
+                text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+        </div>
+        <div class="p_wrap">
+            <h3 class="content_tit"> white-space: pre; </h3>
+            <p class="f13"> Lorem Ipsum is simply dummy 
+                text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+        </div>
+        <div class="p_wrap">
+            <h3 class="content_tit"> white-space: pre-line; </h3>
+            <p class="f14"> Lorem Ipsum is simply dummy 
+                text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+        </div>
+        <div class="p_wrap">
+            <h3 class="content_tit"> white-space: pre-wrap; </h3>
+            <p class="f15"> Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+        </div>
+        <div class="p_wrap">
+            <h3 class="content_tit"> white-space: nowrap; overflow: hidden; text-overflow: ellipsis; </h3>
+            <p class="f16"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+        </div>
+    </div>
+</body>
+</html>
