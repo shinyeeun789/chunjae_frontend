@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> background에 대해 알아보자 </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            width: 100%;
+        }
+        #canvas {
+            width: 100%;
+            clear: both;
+        }
+        .page {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+            overflow: hidden;
+            clear: both;
+        }
+        .page_tit {
+            text-align: center;
+            padding-top: 40px;
+        }
+        
+        #page1-1 {
+            background-color: rgba(181, 197, 230, 0.75);
+        }
+        #page1-2 {
+            background: linear-gradient(#a18cd1, #fbc2eb);
+        }
+        /* 사진 합성하기 */
+        #page2 {
+            background-image: url(./img/dog1.png), url(./img/image1.jpg);
+            background-repeat: no-repeat;
+            background-size: 300px auto, cover;
+            background-position: center bottom, center center;
+            background-attachment: fixed, scroll;
+        }
+        #page3 .pic {
+            clear: both;
+            width: 900px;
+            height: 600px;
+            margin: 20px auto;
+            border: 30px solid #333;
+            padding: 100px;
+            font-size: 100px;
+            line-height: 600px;
+            text-align: center;
+            background-image: url(./img/image2.jpg);
+            background-size: 50% auto;
+            background-repeat: repeat-x;
+            background-position: 0 0;
+            background-origin: border-box;
+            background-clip: content-box;
+        }
+        #page4 {
+            background: #333 url(./img/image1.jpg) center center/100% no-repeat fixed;
+        }
+
+        .wrap {
+            clear: both;
+        }
+        .lst {
+            list-style: none;
+            text-align: center;
+        }
+        .lst li {
+            width: 300px;
+            height: 300px;
+            border: 2px solid #333;
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+        .vs {
+            background-image: url(./img/image2.jpg);
+            background-size: cover;
+        }
+        .vs.blur {
+            filter: blur(1px);
+        }
+        .vs.brightness {
+            /* 0%: 검은화면, 100%: 원본사진, 200%: 밝아진사진*/
+            filter: brightness(50%);
+        }
+        .vs.contrast {
+            /* 안개 낀 느낌 */
+            filter: contrast(50%);
+        }
+        .vs.grayscale {
+            /* 무채톤으로 바꾸기 */
+            filter: grayscale(90%);
+        }
+        .vs.invert {
+            /* 색상 반전 */
+            filter: invert(90%);
+        }
+        .vs.hue-rotate {
+            /* 현재 사진의 90도 방향에 있는 색과 현재 사진을 연산하기 */
+            filter: hue-rotate(90deg);
+        }
+        .vs.saturate {
+            /* 채도가 낮아져 오래된 사진처럼 보임 */
+            filter: saturate(20%);
+        }
+        .vs.sepia {
+            filter: sepia(60%);
+        }
+        .vs.drop-shadow {
+            filter: drop-shadow(10px 15px 20px #333)
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas">
+        <section class="page" id="page1-1">
+            <h2 class="page_tit"> 단색 배경 </h2>
+        </section>
+        <section class="page" id="page1-2">
+            <h2 class="page_tit"> 그라데이션 배경 </h2>
+        </section>
+        <section class="page" id="page2">
+            <h2 class="page_tit"> 사진 합성하기 </h2>
+        </section>
+        <section class="page" id="page3">
+            <h2 class="page_tit"> 페이지제목3 </h2>
+            <div class="pic"> 그림 </div>
+        </section>
+        <section class="page" id="page4">
+            <h2 class="page_tit"> 페이지제목4 </h2>
+        </section>
+    </div>
+    <div id="wrap">
+        <ul class="lst">
+            <li class="vs blur"> filter: blur(1px) </li>
+            <li class="vs brightness"> filter: brightness(50%) </li>
+            <li class="vs contrast"> filter: contrast(50%) </li>
+            <li class="vs grayscale"> filter: grayscale(90%) </li>
+            <li class="vs invert"> filter: invert(90%) </li>
+            <li class="vs hue-rotate"> filter: hue-rotate(90deg) </li>
+            <li class="vs saturate"> filter: saturate(20%) </li>
+            <li class="vs sepia"> filter: sepia(60%) </li>
+            <li class="vs drop-shadow"> filter: drop-shadow(10px 15px 20px #333) </li>
+        </ul>
+    </div>
+</body>
+</html>
