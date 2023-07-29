@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 버튼을 클릭해 상세 설명 글 표시하기 </title>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+        }
+        #wrap_img {
+            position: relative;
+            width: 800px;
+            margin: 20px auto;
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+        button {
+            width: 150px;
+            height: 35px;
+            background-color: #fff;
+            border-radius: 20px;
+            position: absolute;
+            top: 475px;
+            left: 20px;
+        }
+        #showbtn {
+            display: block;
+        }
+        #closebtn {
+            display: none;
+        }
+        #detail {
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap_img">
+        <img src="img/constellations.jpg" alt="예쁜 하늘">
+        <button id="showbtn"> 상세 설명 보기 </button>
+        <button id="closebtn"> 닫기 </button>
+    </div>
+    <div id="detail">
+        <h4> 완전 예쁜 하늘🌈 </h4>
+        <p> 출처는 pixabay이며, 보자마자 예뻐서 데리고 왔습니다😄 그리고 지금 저는 배고파요😧 </p>
+    </div>
+
+    <script>
+        let showbtn = document.getElementById("showbtn");
+        let closebtn = document.getElementById("closebtn");
+        let detail = document.getElementById("detail");
+
+        showbtn.addEventListener("click", function() {
+            detail.style.display = "block";
+            showbtn.style.display = "none";
+            closebtn.style.display = "block";
+        });
+
+        closebtn.addEventListener("click", function() {
+            detail.style.display = "none";
+            showbtn.style.display = "block";
+            closebtn.style.display = "none";
+        });
+    </script>
+</body>
+</html>
